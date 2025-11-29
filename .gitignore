@@ -1,5 +1,4 @@
 ﻿node_modules
 .env
-.next
 .DS_Store
 *.log
