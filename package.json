@@ -1,19 +1,17 @@
 ﻿{
   "name": "ai-tools-site",
   "version": "1.0.0",
-  "description": "Combined CODM Tips & Local Reply AI tools (OpenAI backend)",
+  "description": "AI Tools for CODM Tips and Business Replies",
   "main": "server/server.js",
   "type": "module",
   "scripts": {
     "start": "node server/server.js",
     "dev": "nodemon server/server.js"
   },
-  "author": "You",
-  "license": "MIT",
   "dependencies": {
+    "express": "^4.18.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
-    "express": "^4.18.2",
     "node-fetch": "^3.4.1"
   },
   "devDependencies": {
