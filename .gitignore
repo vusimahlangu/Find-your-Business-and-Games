@@ -1,0 +1,13 @@
+﻿# AI Tools Deployment Script
+Write-Host "Deploying AI Tools Application..." -ForegroundColor Green
+# Create .gitignore (to avoid adding system files)
+@'
+node_modules
+.env
+.next
+.env.local
+.DS_Store
+*.log
+AppData/
+Local Settings/
+Thumbs.db

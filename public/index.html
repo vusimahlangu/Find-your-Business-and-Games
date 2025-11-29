@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Tools - CODM Tips & Local Replies</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <header>
+    <h1>AI Tools - CODM Coach & Local Reply</h1>
+    <p class="subtitle">Generate CODM tips or draft friendly replies for local businesses.</p>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h2>CODM Gameplay Tips</h2>
+      <div class="form-row">
+        <label>Weapon type<input id="codm-weapon" placeholder="e.g. assault rifle"/></label>
+        <label>Playstyle<input id="codm-playstyle" placeholder="e.g. aggressive, passive"/></label>
+      </div>
+      <div class="form-row">
+        <label>Map<input id="codm-map" placeholder="e.g. Hackney Yard"/></label>
+        <label>Device<input id="codm-device" placeholder="e.g. Android"/></label>
+        <label>Skill level<select id="codm-skill">
+          <option>beginner</option><option>intermediate</option><option>advanced</option>
+        </select></label>
+      </div>
+      <button id="btn-codm" class="btn">Get CODM Tips</button>
+      <pre id="codm-output" class="output"></pre>
+    </section>
+    <section class="card">
+      <h2>Local Business Reply</h2>
+      <div class="form-row">
+        <label>Business type<input id="lr-business" placeholder="e.g. bakery"/></label>
+      </div>
+      <div class="form-row">
+        <label>Customer message<textarea id="lr-message" placeholder="Customer's message..."></textarea></label>
+      </div>
+      <div class="form-row">
+        <label>Tone<select id="lr-tone">
+          <option>warm and friendly</option><option>professional</option><option>casual</option>
+        </select></label>
+        <label>Extra info<input id="lr-extra" placeholder="e.g. 24-48 hours notice"/></label>
+      </div>
+      <button id="btn-lr" class="btn">Draft Reply</button>
+      <pre id="lr-output" class="output"></pre>
+    </section>
+    <section class="card small">
+      <h3>Notes</h3>
+      <ul>
+        <li>OpenAI key is stored on the server. Do not add it to client code.</li>
+        <li>If you are under 18, ask a parent/guardian to create the OpenAI account and handle payments.</li>
+        <li>Usage has a simple daily limit per IP to control costs.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <small>&copy; AI Tools - Build & Learn</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
